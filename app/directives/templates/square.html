@@ -1,0 +1,12 @@
+<section id="categories" class="container">
+    <div class="row">
+        <div class="col m2" ng-repeat="category in square.categories">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" ng-src="{{category.img}}">
+                    <span class="card-title">{{category.name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
