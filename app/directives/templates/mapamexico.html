@@ -1,9 +1,11 @@
 <section id="mexico" class="container">
     <div class="card">
         <div class="card-content">
+
+            {{mapa.over}}
+
     <div class="row">
         <div class="col m6">
-            
             
 
 <svg
@@ -173,27 +175,6 @@
   </defs>
 </svg>
 
-
-        </div>
-        <div class="col m3">
-                    <div class="collection">
-                        <a class="collection-item"
-                           ng-class="{'active': mexico.over == state.id}"
-                           ng-repeat="state in mexico.list | limitTo:2">
-                            {{state.name}}
-                        </a>
-                    </div>
-        </div>
-        <div class="col m3">
-            <div class="collection">
-                <a class="collection-item"
-                   ng-class="{'active': mexico.over == state.id}"
-                   ng-repeat="state in mexico.list | limitTo:2:2">
-                    {{state.name}}
-                </a>
-            </div>
-        </div>
-    </div>
             </div>
     </div>
 </section>
