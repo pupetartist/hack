@@ -1,85 +1,29 @@
 <!DOCTYPE HTML>
-<html ng-app="segundamano">
-<head>
-  <title>RuleteApp</title>
-  <meta charset="utf-8"/>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="./assets/theme.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
+<html ng-app="llegaprimero">
+  <head>
+    <title>Example</title>
+    <meta charset="utf-8"/>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="/app/app.js"></script>
 
-<div class="navbar-fixed">
-  <nav class="darken-4">
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo">ruleteApp</a>
-      <ul class="right hide-on-med-and-down">
-        <li></li>
-        <li><a href="#">Ramales</a></li>
-        <li><a href="#">Mapaton</a></li>
-      </ul>
+    <style>
+        svg{
+          border:1px solid red;
+        }
+        li{
+            color: #385b99;
+        }
+
+        li.active{
+            color: #dd21ff;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div style="width:30%">
+      <card-one></card-one>
     </div>
-  </nav>
-</div>
-
-<main ng-view></main>
-
-<footer class="page-footer  orange accent-4">
-  <div class="container">
-    <div class="row">
-      <div class="col l4 ">
-        <h5 class="white-text">Nosotros</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Atención al cliente</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Condiciones de uso</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Ayuda</a></li>
-        </ul>
-
-      </div>
-      <div class="col l4 ">
-        <h5 class="white-text">Unete</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Developers</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Contribuciones</a></li>
-        </ul>
-      </div>
-      <div class="col l4 ">
-        <h5 class="white-text">Contacto</h5>
-        <ul>
-          <li><a  class="grey-text text-lighten-3" href="#!">Monte Urales 445, Lomas de Virreyes</a></li>
-          <li><a  class="grey-text text-lighten-3" href="#!">Escribenos </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2016 ruleteApp
-      <a class="grey-text text-lighten-4 right" href="#!">Términos y condiciones</a>
-    </div>
-  </div>
-</footer>
-
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.min.js"></script>
-<script src="app/app.js"></script>
-<script src="app/routes/routes.js"></script>
-<script src="app/factory/category.js"></script>
-<script src="app/factory/products.js"></script>
-<script src="app/directives/squares.js"></script>
-<script src="app/directives/products.js"></script>
-<script src="app/directives/mexico.js"></script>
-<script src="app/home/ctrl_home.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-</body>
+  </body>
 </html>
